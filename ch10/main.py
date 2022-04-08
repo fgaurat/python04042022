@@ -1,4 +1,4 @@
-²                   
+import requests
 from bs4 import BeautifulSoup
 import glob
 import re
@@ -13,7 +13,7 @@ def main():
                 ip = re.findall(r'^(.*?)\s',line)
                 status = re.findall(r'\"\s(\d{3})',line)
                 if '404' in status: 
-                    print(ip,status)bn 
+                    print(ip,status)
 
 
 
